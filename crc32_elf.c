@@ -85,7 +85,6 @@ int main (int argc, char *argv[])
 
    unsigned long fcrc;
 
-
     fp = fopen(argv[1], "r");
     if (fp == NULL)
         printf("\nFile unable to open ");
@@ -96,7 +95,7 @@ int main (int argc, char *argv[])
     printf("The size of given file is : %d\n", fsize); 
 
 
-   printf("file name is %s, file size is %d\n", argv[1], fsize);
+   printf("File name is %s, file size is %d\n", argv[1], fsize);
 
 
    buffer = (char*)malloc(fsize);
